@@ -1,7 +1,5 @@
 import tensorflow as tf
 
-from tensorflow.examples.tutorials.mnist import input_data
-
 def placeholder_inputs(is_one_hot=False):
     images_placeholder = tf.placeholder(tf.float32, shape=[None, 784])
     if is_one_hot:
